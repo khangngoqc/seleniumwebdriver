@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="methods" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="threadSafetyConcept.DriverTest1">
+      <class name="TipsAndTrick.CommonExceptions">
         <methods>
-          <include name="tearDown"/>
-          <include name="mytest2"/>
-          <include name="mytest1"/>
+          <include name="testNoSuchElementException2"/>
+          <include name="tearDownm"/>
+          <include name="testNoSuchElementException"/>
+          <include name="testNoAlertPresentException"/>
+          <include name="testStaleElementReferenceException"/>
+          <include name="testInvalidSelectorException"/>
+          <include name="testNoSuchSessionException"/>
         </methods>
-      </class> <!-- threadSafetyConcept.DriverTest1 -->
+      </class> <!-- TipsAndTrick.CommonExceptions -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

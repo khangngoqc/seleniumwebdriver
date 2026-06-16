@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day45.ParamTest">
+      <class name="TipsAndTrick.CommonExceptions">
         <methods>
-          <include name="setup"/>
-          <include name="testURL"/>
-          <include name="testLogo"/>
-          <include name="tearDown"/>
-          <include name="testTitle"/>
+          <include name="testNoSuchElementException2"/>
+          <include name="tearDownm"/>
+          <include name="testNoSuchElementException"/>
+          <include name="testNoAlertPresentException"/>
+          <include name="testStaleElementReferenceException"/>
+          <include name="testInvalidSelectorException"/>
+          <include name="testNoSuchSessionException"/>
         </methods>
-      </class> <!-- day45.ParamTest -->
+      </class> <!-- TipsAndTrick.CommonExceptions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
